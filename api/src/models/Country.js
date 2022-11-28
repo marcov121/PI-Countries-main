@@ -7,11 +7,32 @@ module.exports = (sequelize) => {
     id: {
       type: DataTypes.UUID,
       allowNull: false,
-      primaryKey: false,
+      primaryKey: false
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
+    img: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    continent: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    capital: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    subregion: {
+      type: DataTypes.STRING
+    },
+    area: {
+      type: DataTypes.DOUBLE
+    },
+    population: {
+      type: DataTypes.INTEGER
+    }
   });
 };
